@@ -1,0 +1,24 @@
+Build command:
+docker build -t advisory-api .
+
+Run command:
+docker run -d -p 8000:8000 --name advisory-api-test advisory-api
+
+Container status:
+NAMES               STATUS          PORTS
+advisory-api-test   Up 30 seconds   0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp
+
+GET /advisory?region=Bahir%20Dar
+{"region":"Bahir Dar","type":"weather","message":"Rain expected in 2 days. Delay fertilizer application.","confidence":"medium"}
+
+GET /advisory?region=Oromia
+{"region":"Oromia","type":"fertilizer","message":"Apply urea at the early vegetative stage in the recommended dosage for your area.","confidence":"high"}
+
+GET /advisory?farmer_id=FARM001
+{"region":"Hawassa","type":"weather","message":"Dry conditions are expected this week. Prepare irrigation if available.","confidence":"medium","farmer_id":"FARM001"}
+
+GET /advisory?region=Unknown
+{"detail":"No advisory available for region 'Unknown'. Supported regions: Bahir Dar, Oromia, Hawassa"}
+
+GET /health
+{"status":"ok"}

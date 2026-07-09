@@ -1,0 +1,5 @@
+INFO:     172.17.0.1:47608 - "GET /advisory?region=Bahir%20Dar HTTP/1.1" 200 OK
+INFO:     172.17.0.1:47616 - "GET /advisory?region=Oromia HTTP/1.1" 200 OK
+INFO:     172.17.0.1:47626 - "GET /advisory?farmer_id=FARM001 HTTP/1.1" 200 OK
+INFO:     172.17.0.1:47634 - "GET /advisory?region=Unknown HTTP/1.1" 404 Not Found
+INFO:     172.17.0.1:47646 - "GET /health HTTP/1.1" 200 OK

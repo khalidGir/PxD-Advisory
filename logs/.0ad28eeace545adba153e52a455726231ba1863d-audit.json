@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\hp\\ALL_PROJECTS\\PXD\\logs\\.0ad28eeace545adba153e52a455726231ba1863d-audit.json",
+    "files": [
+        {
+            "date": 1783580345297,
+            "name": "C:\\Users\\hp\\ALL_PROJECTS\\PXD\\logs\\mcp-puppeteer-2026-07-09.log",
+            "hash": "90aee1f3806fe50576d0243e2eb5bd32448eced964a6811a8c9ae5943a9fdebe"
+        }
+    ],
+    "hashType": "sha256"
+}
